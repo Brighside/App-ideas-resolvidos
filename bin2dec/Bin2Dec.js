@@ -9,7 +9,7 @@ function isBin() { // Verifica se o Numero é realmente um Binário
   var bin = true 
   var numero = String(binary.value)
 
-  for (var i = 0; i <= numero.length; i++){ //  Verifica se existe um numero maior que 1 no valor digitado
+  for (var i = 0; i <= numero.length; i++){ //  Verifica se existe um digito maior que 1 no valor digitado
     if (numero[i] > 1){
       bin = false
     }
