@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-radius Previewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <Header>
+        <h1>Border-Radius Generator</h1>
+    </Header>
+
+    <section class="inteface-box">
+        <input type="button" value="Copiar" class="copy" onclick="copiar()">
+
+        <div id="box">
+            <textarea id="linha"></textarea>
+        </div>
+        
+        <input type="color" id="background-cl" class="bg-color">
+    </section>
+
+    <section class="inteface-borders">
+        <div class="all borders">
+            All-borders
+            <input type="number" placeholder="0-250" id="all-borders">
+        </div>
+
+        <div class="borders">
+            <div class="left">                
+                Top left
+                <input type="number" placeholder="0-250" id="top-left">
+
+                Bottom left
+                <input type="number" placeholder="0-250" id="bottom-left">
+            </div>
+
+            <div class="right">
+                Top right
+                <input type="number" placeholder="0-250" id="top-right">
+
+                Bottom right
+                <input type="number" placeholder="0-250" id="bottom-right">
+            </div>
+        </div>
+    </section>
+    
+    <script src="previewer.js"></script>
+    <script src="copyCSS.js"></script>
+</body>
+</html>
