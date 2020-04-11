@@ -58,6 +58,10 @@ rightBottom.addEventListener('input', () => {
 all.addEventListener('input', () => {
     if (!valido(all.value)) {
         all.value = null
+        rightTop.value = null
+        rightBottom.value = null
+        leftBottom.value = null
+        leftTop.value = null
         all.focus()
     }
     else {
